@@ -2,17 +2,17 @@ vowels = "aeiouAEIOU"
 consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
 
 while True:
-    user_input = input("Enter a word (or 'exit' to quit): ")
+    user_input = input("Enter a word or 'exit' to quit: ")
     if user_input.lower() == 'exit':
         break
 
     vowel_count = 0
     consonant_count = 0
 
-    for char in user_input:
-        if char in vowels:
+    for sym in user_input:
+        if sym in vowels:
             vowel_count += 1
-        elif char in consonants:
+        elif sym in consonants:
             consonant_count += 1
 
     total_letters = vowel_count + consonant_count
