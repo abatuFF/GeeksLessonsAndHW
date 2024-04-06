@@ -52,14 +52,48 @@
 # print(f" Your average expenses for day is : {average_exp}")
 
 # задание с градусами
+# #
+while True:
+    command = input('enter "yes" or "no": ')
+    if command == "yes":
+        temperature = int(input("outside temperature: "))
+        if -30 <= temperature <= 10:
+            print("there's cold outside")
+        elif 11 <= temperature <= 20:
+            print("there's cool outside")
+        elif 21 <= temperature <= 30:
+            print("there's heat outside")
+        else:
+            print("you're form Mars?")
+    elif command == "no":
+        print('exit...')
+        break
+    else:
+        print('wrong command')
 
-temperature = int(input("outside temperature: "))
 
-if -30 <= temperature <= 10:
-    print("there's cold outside")
-elif 11 <= temperature <= 20:
-    print("there's cool outside")
-elif 21 <= temperature <= 30:
-    print("there's heat outside")
-else:
-    print("you're form Mars?")
+# cycle
+
+# fruits = ['apple', 'banana', 'cherry']
+# for fruit in fruits:
+#     print(fruit)
+
+
+# count = 0
+# while count <= 15:
+#     print(count)
+#     count += 1
+
+# attempts = int(input("enter amount of attempts: "))
+#
+# while attempts > 0:
+#     print("attemts you have", attempts)
+#     temperature = int(input("outside temperature: "))
+#     if -30 <= temperature <= 10:
+#         print("there's cold outside")
+#     elif 11 <= temperature <= 20:
+#         print("there's cool outside")
+#     elif 21 <= temperature <= 30:
+#         print("there's heat outside")
+#     else:
+#         print("you're form Mars?")

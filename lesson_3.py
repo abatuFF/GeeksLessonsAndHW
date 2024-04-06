@@ -54,17 +54,20 @@
 
 # for cycle, range
 
-# for number in range(1,11):
-#     if number == 5:
-#         break
-#     # if number % 2 != 0:
-#     #     continue
-#     # print(number)
 
-cash = 100:
-percents = 0.1
-years = 5
+for number in range(1,11):
+    if number == 5:
+        break
+    if number % 2 != 0:
+        continue
+    print(number)
+#
+# cash = 100:
+# percents = 0.1
+# years = 5
+#
+# for year in range(1, years+1):
+#     cash += cash * percents
+#     print(f'{year})')
 
-for year in range(1, years+1):
-    cash += cash * percents
-    print(f'{year})')
+
