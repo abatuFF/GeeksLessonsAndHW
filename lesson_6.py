@@ -30,6 +30,8 @@
 
 #edit
 #сортировка списка по алфавиту
+# students.sort()
+#сортировка против алфавита
 # students.sort(reverse=True)
 
 # отзеркаливание списка
@@ -88,15 +90,15 @@
 
 #добавить обработку ошибок
 # первая домашка с листами
-# week_days = ['Monday', 'Tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-# amount_days = len(week_days)
-# expenses = 0
-#
-# for day in week_days:
-#     print(f'total sum: {expenses}')
-#     expense = int(input(f'Enter expenses in {day.upper()}: '))
-#     print(day.upper(), expense)
-#     expenses += expense
+week_days = ['Monday', 'Tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+amount_days = len(week_days)
+expenses = 0
+
+for day in week_days:
+    print(f'total sum: {expenses}')
+    expense = int(input(f'Enter expenses in {day.upper()}: '))
+    print(day.upper(), expense)
+    expenses += expense
 
 # numbers = [23, 14, 12, 2, 5]
 # numbers.sort(reverse = True)
