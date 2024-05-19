@@ -1,39 +1,12 @@
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n - i -1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-        return arr
+class Car:
+    def __init__(self, make, model, year, odometer_reading = 0):
+        self.__make = make
+        self.__model = model
+        self.__year = year
+        self.__odometer_reading = odometer_reading
 
-unsorted_list = [1, 3, 5, 4, 7, 6, 8, 9, 10]
-sorted_list = bubble_sort(unsorted_list)
-
-print(f'Sorted list : {sorted_list}')
+    def get_descriptive_name(self):
+        return f'{self.__year}, {self.__make}, {self._model}'
 
 
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-        return arr
-
-unsroted_list = [1, 3, 5, 4, 7, 6, 8, 9, 10]
-sorted_list = bubble_sort(unsroted_list)
-print(f' Sorted List: {sorted_list}')
-
-
-
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] == arr[j + 1], arr[j]
-        return arr
-
-unsorted_list = [1, 3, 5, 4, 7, 6, 8, 9, 10]
-sorted_list = bubble_sort(unsorted_list)
-print(f'sorted list : {sorted_list}')
+    
